@@ -1,0 +1,145 @@
+.quote{
+    width: 600px;
+    height: 600px;
+    background-color: #0d5825;
+}
+blockquote{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+}
+span{
+    font-style: italic;
+    font-weight: lighter;
+}
+.card{
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+img{
+    width: 150px;
+    transition: 0.3s;
+    top: 0;
+}
+img:hover{
+    top: -5%;
+}
+.card1{
+    z-index: 1;
+    transform: translateX(-50%) rotate(-20deg);
+    position: absolute;
+    left: 45%;
+}
+.card2{
+    z-index: 2;
+    transform: translateX(-50%) rotate(-5deg);
+    position: absolute;
+    left: 50%;
+}
+.card3{
+    z-index: 3;
+    transform:translateX(-50%) rotate(10deg);
+    position: absolute;
+    left: 55%;
+}
+.color{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.red{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.green{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.menu{
+    position: fixed;
+    left: -160px;
+    top: 0;
+    text-align: left;
+    height: 100%;
+    width: 170px;
+    background-color: grey;
+    height: auto;
+    transition: 0.3s;
+    z-index: 999;
+    font-size: 20px;
+    padding: 15px;
+    height: 100vh;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.menu:hover{
+    left: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: orange;
+}
+ul{
+    list-style-type: square;
+}
+.here{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    writing-mode: vertical-rl;
+    text-orientation:sideways;
+    transition: 0.3s;
+    color: white;
+    text-transform: uppercase;
+}
+.menu:hover .here{
+    opacity: 0;
+}
+
+.anim_wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.anim{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: square 5s infinite;
+    position: absolute;
+}
+@keyframes square {
+    0%{ top: 0; left: 0; right: calc(100% - 100px); bottom: calc(100% - 100px); background-color: red;}
+    25%{ top: calc(100% - 100px); left: 0; right: calc(100% - 100px); bottom: 0; background-color: blue;}
+    50%{ top: calc(100% - 100px); left: calc(100% - 100px); right: 0; bottom: 0; background-color: green;}
+    75%{ top: 0; left: calc(100% - 100px); right: 0; bottom: calc(100% - 100px); background-color: yellow;}
+    100%{ top: 0; left: 0; right: calc(100% - 100px); bottom: calc(100% - 100px); background-color: red;}
+
+
+}
